@@ -30,7 +30,6 @@ const Job = ({ job, saveLater }) => {
       });
     }
     if (saveLater) {
-      console.log("HELLOO...");
       dispatch(removeSaveJob(job));
     } else if (!duplicate) {
       dispatch(setSaveJob(job));

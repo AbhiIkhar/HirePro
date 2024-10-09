@@ -31,10 +31,7 @@ const FilterCard = () => {
   const [testValue, setTestValue] = useState(fitlerData.map(() => ""));
   // const [type, setType] = useState("");
   const dispatch = useDispatch();
-  // const changeHandler = (value) => {
-  //   setSelectedValue(value);
-  //   console.log(selectedValue);
-  // };
+
   const changeHandlerTest = (newValue, index) => {
     const updatedValues = [...testValue];
     updatedValues[index] = newValue;
